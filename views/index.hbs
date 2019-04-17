@@ -1,0 +1,23 @@
+{{!-- Home Page  --}}
+
+{{#each animal}}
+<div class="container">
+  <div class="row">
+    <div class="col-4">`
+      <!-- Bootstrap Card -->
+      <div class="card">
+        <video class="video" autoplay loop muted>
+          <source src={{{video}}} type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="card-body">
+          <h5 class="card-title">{{name}}</h5>
+          <p class="card-text">
+            {{description}}</p>
+          <a href="#" class="btn btn-primary">Feed an animal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
