@@ -10,6 +10,8 @@ const animalSchema = new Schema({
   description: String,
   image: String,
   video: String,
+  button: String,
+  species: String,
 });
 
 const Animal = mongoose.model('Animal', animalSchema);

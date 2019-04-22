@@ -1,0 +1,107 @@
+body {
+  padding: 0px;
+  font: 14px; 
+  margin: 0px;
+  font-family: "Roboto",Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container {
+  padding-top: 0.7%;
+}
+
+.card:hover {
+  -webkit-box-shadow: -1px 9px 20px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 9px 20px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 9px 20px -12px rgba(0, 0, 0, 0.75);
+}
+
+.card {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.animal-img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.flex-container {
+  display: flex;
+  margin: 0 5%;
+}
+
+.slick-prev {
+  color: red;
+}
+
+
+.grey-bar {
+  height: 100px;
+  width: 100vw;
+  background-color: #dedede;
+  padding: 0px;
+  margin: 0px
+}
+
+#logo {
+  margin: 20px;
+  padding-left: 5%;
+}
+
+.grey-half {
+  height: 400px;
+  width: 100vw;
+  background-color: #dedede;
+  padding: 0px;
+  margin: 0px
+}
+
+.prev {
+  float: left;
+  margin-left: -5%;
+  margin-top: 24%;
+}
+
+.next {
+  float: right;
+  margin-right: 5.2%;
+  margin-top: 24%;
+}
+
+.h1-card {
+  color: white;
+  font-family: "Helvetica";
+  margin-top: -95%;
+  margin-bottom: 80%;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3)
+}
+
+.order-half {
+  height: 400px;
+  width: 100vw;
+  background-image: "./images/lions.jpg";
+  background-size: cover;
+  padding: 0px;
+  margin: 0px
+}

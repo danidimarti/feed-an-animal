@@ -1,24 +1,56 @@
 {{!-- Home Page  --}}
+<div class="grey-half">
+  <img src="images/four_paws_4c.png" alt="logo-image" id="logo">
 
-{{#each animal}}
-<div class="container">
-  <div class="row">
-    <div class="col-4">`
-      <!-- Bootstrap Card -->
-      <div class="card">
-        <video class="video" autoplay loop muted>
+  <a href="#" class="btn btn-primary"
+    style="background-color:#ea5b0c; border-color: #ea5b0c; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3); margin-left: 60%; margin-right: 0; width: 150px">Subscribe</a>
+  <div class="container">
+    <img src="/images/previous-icon.png" class="prev"></img>
+    <img src="/images/next-icon.png" class="next"></img>
+    
+    
+    
+    <div class="row justify-content-around">
+
+      <div class="slider-container col-12 ">
+
+        {{#each animal}}
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <!-- Bootstrap Card -->
+              <div class="card">
+                {{!-- <video class="video" autoplay loop muted>
           <source src={{{video}}} type="video/mp4">
           Your browser does not support the video tag.
-        </video>
-        <div class="card-body">
-          <h5 class="card-title">{{name}}</h5>
-          <p class="card-text">
-            {{description}}</p>
-          <a href="#" class="btn btn-primary">Feed an animal</a>
+        </video> --}}
+
+                <div class="img-container">
+
+                  <img src="{{{image}}}" alt="animal images" class="animal-img">
+                  <h1 class="h1-card"><strong>{{{species}}}</strong></h1>
+                  <div class="card-body">
+                  </div>
+                  <h5 class="card-title">{{name}}</h5>
+                  <p class="card-text">
+                    {{description}}</p>
+
+
+                </div>
+                <div class="btn-box">
+                  <a href="#" class="btn btn-primary"
+                    style="background-color:#ea5b0c; border-color: #ea5b0c; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3); width:200px; height: 40px; display: flex; justify-content: center; align-content: center; padding-top: 5px; margin-left: 20%; "><strong>Feed
+                      an animal</strong></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
+
+        {{/each}}
+
       </div>
     </div>
   </div>
-</div>
-
-{{/each}}
