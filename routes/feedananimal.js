@@ -1,11 +1,17 @@
 const express = require('express');
 const router  = express.Router();
 const Animal = require('../models/animal')
+const Donor = require('../models/donor')
 
-router.get("/feed-an-animal/:name", (req, res, next) => {
+
+
+
+router.get("/:name", (req, res, next) => {
 console.log(req.params.name)
+console.log("test")
   Animal.findOne({name: req.params.name})
 .then(animal =>{
+  console.log(animal)
   res.render('feedananimal', animal);
 })
 .catch(err => {
@@ -13,22 +19,20 @@ console.log(req.params.name)
 })
 });
 
+router.post("/donate", (req, res, next) => {
+  const {gender, firstname, lastname, email, number } = req.body;
+  const newDonor = new Donor(req.body)
+  newDonor.save()
+    .then((donor) => {
+      res.redirect("/thankyou?name=" + req.query.name);
+    })
+    .catch((err)=> {
+      console.log(err)
+})
+})
+
 module.exports = router;
 
-// app.get(`/youfed/${req.animals.name}`, (req, res, next) => {
-//   console.log(req.animals.name)
-// Animal.find()
-// .then(animals =>{
-//   res.render('thankyou', {animal:animals});
-// })
-// .catch(err => {
-//   console.log('no thanks', err)
-// })
-// });
-
-// module.exports = router;
-
-// })
 
 
 

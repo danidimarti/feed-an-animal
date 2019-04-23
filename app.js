@@ -53,14 +53,15 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
+const thankyou = require('./routes/thankyou');
+app.use('/', thankyou);
+
 const feedananimal = require('./routes/feedananimal');
 app.use('/', feedananimal);
 
 const orderform = require('./routes/orderform');
 app.use('/', orderform);
 
-const thankyou = require('./routes/thankyou');
-app.use('/', thankyou);
 
 module.exports = app;
 

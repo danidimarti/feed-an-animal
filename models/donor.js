@@ -1,11 +1,13 @@
 const mongoose = require('mongoose')
-const Schema   = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 const donorSchema = new Schema({
-  name: String,
-  age: Number,
+  gender: String,
+  firstname: String,
+  lastname: String,
   email: String,
-  
+  number: Number,
+
 });
 
 const Donor = mongoose.model('Donor', donorSchema);

@@ -2,10 +2,10 @@
   <img src="../images/four_paws_4c.png" alt="logo-image" id="logo">
   <img src="../images/lions.jpg" alt="background image">
   <div class="btn-box">
-              <button href="#" class="btn btn-primary"><strong>Give a meal</strong></button>
+    <button href="#" class="btn btn-primary" id="feedanimal-btn"><strong>Give a meal</strong></button>
 
 
-            </div>
+  </div>
 </div>
 
 
@@ -58,7 +58,7 @@
     </div>
     <img id="order-logo" src="../images/four_paws_4c_100.png" alt="logo">
 
-    <form action="/orderform" id="orderForm" method="POST">
+    <form action="/donate?animal={{name}}" id="orderForm" method="POST">
       <h3><strong>Personal Information</strong></h3>
       <select class="order-input" name="gender" required aria-describedby="errorgender">
         <option value>Select Gender*</option>
@@ -77,13 +77,13 @@
       {{!-- <label class="order-input-label" for="firstname">Last Name*</label> --}}
       <input id="age-input" class="order-input" type="text" name="lastname" placeholder="Last Name">
 
-      <label class="order-input-label" for="age-input">Phone Number*</label>
-      <input id="age-input" class="order-input" type="number" name="age" placeholder="(999) 000-0000">
+      <label class="order-input-label" for="number-input">Phone Number*</label>
+      <input id="number-input" class="order-input" type="number" name="number" placeholder="(999) 000-0000">
+      <input type="submit" value="Send Order Form" class="btn btn-primary">
 
-      <a href="#" class="btn btn-primary"
-        style="background-color:#ea5b0c; border-color: #ea5b0c; justify-content: center; align-items: center; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3); position: relative; margin-left: 32%; margin-top: 10px; width: 150px">Send
-        order form</a>
 
     </form>
   </div>
 </div>
+
+<script src="/javascripts/popup.js"></script>
