@@ -1,12 +1,14 @@
 const express = require('express');
 const router  = express.Router();
-const Animal = require('../models/animal')
+const Donor = require('../models/donor')
 
-app.get(`/youfed/${req.animals.name}`, (req, res, next) => {
-  console.log(req.animals.name)
-Animal.find()
-.then(animals =>{
-  res.render('thankyou', {animal:animals});
+
+router.get('/thankyou', (req, res, next) => {
+  console.log(req.donor.name)
+  res.send("test")
+Donor.find()
+.then(donors =>{
+  res.render('thankyou', {donor:donors});
 })
 .catch(err => {
   console.log('no thanks', err)
@@ -15,5 +17,4 @@ Animal.find()
 
 module.exports = router;
 
-})
 

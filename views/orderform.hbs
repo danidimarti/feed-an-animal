@@ -1,111 +1,24 @@
-{{!-- <div class="small-12 medium-6 columns float-right">
-  <div class="border-formContainer">
-    <div class="formContainer">
-      <form action="/orderform" id="orderForm" method="POST">
-      <h3>Personal Information</h3>
-        <select name="gender" required aria-describedby="errorgender">
-          <option value>Select Gender*</option>
-          <option value="female">Female</option>
-          <option value="male">Male</option>
-          <option value="private">Private</option>
-          <small class="errorgender">Gender is required</small>
+<div class="pic-bar">
+  <img src="images/four_paws_4c.png" alt="logo-image" id="logo-float">
+  <a href="#" class="btn btn-primary"
+    style="background-color:#ea5b0c; border-color: #ea5b0c; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3); margin-left: 80%; margin-top: 2%; width: 150px; position: absolute">Subscribe</a>
 
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email" placeholder="example@domain.com" required>
 
-          <label for="name-input">Name</label>
-          <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+  <h1 class="h1-card-ty">ORANGUTAN</h1>
+  <img src="../images/orangutans_2.jpg" alt="logo-image" id="cover-img">
+</div>
 
-          <label for="age-input">Age</label>
-          <input id="age-input" type="number" name="age">
-
-          <button type="submit">Send Order Form!</button>
-      </form>
+<div class="container-ty">
+  <div class="ty-card">
+    <div class="success-msg">
+      <p>Your payment was</p>
+      <p class="successful">SUCCESSFUL</p>
+    </div>
+    <div class="ty-msg">
+      <h2>You've helped feed<br>[animal Name]!</h2>
+      <hr size="4" color="#dedede" width="40%" align="center">
+      <p>Your support makes all the difference for animals like [NAME], who have no voice to speak for themselves. Sign
+        up for our newsletter and find out more about ways you can get involved!</p>
     </div>
   </div>
-</div> --}}
-
-
-
-{{!-- 
-
-<div class="row justify-content-around">
-
-<div></div>
-  <div class="formBigcontainer">
-    <div class="row">
-      <div class="col-6">
-        <div class="border-formContainer">
-          <div class="formContainer">
-            <form action="/orderform" id="orderForm" method="POST">
-              <h3>Personal Information</h3>
-              <select name="gender" required aria-describedby="errorgender">
-                <option value>Select Gender*</option>
-                <option value="female">Female</option>
-                <option value="male">Male</option>
-                <option value="private">Private</option>
-                <small class="errorgender">Gender is required</small>
-
-                <label for="email">Email</label>
-                <input id="email" type="email" name="email" placeholder="example@domain.com" required>
-
-                <label for="name-input">Name</label>
-                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
-
-                <label for="age-input">Age</label>
-                <input id="age-input" type="number" name="age">
-
-                <div class="btn-box">
-                  <a href="#" id="btn-order" class="btn btn-primary"><strong>Submit Order Form</strong></a>
-                </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> --}}
-
-
-</div>
-</div>
-</div>
-
-<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <i class="fas fa-user prefix grey-text"></i>
-          <input type="text" id="orangeForm-name" class="form-control validate">
-          <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
-        </div>
-        <div class="md-form mb-5">
-          <i class="fas fa-envelope prefix grey-text"></i>
-          <input type="email" id="orangeForm-email" class="form-control validate">
-          <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
-        </div>
-
-        <div class="md-form mb-4">
-          <i class="fas fa-lock prefix grey-text"></i>
-          <input type="password" id="orangeForm-pass" class="form-control validate">
-          <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
-        </div>
-
-      </div>
-      <div class="modal-footer d-flex justify-content-center">
-        <button class="btn btn-deep-orange">Sign up</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="text-center">
-  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Launch
-    Modal Register Form</a>
 </div>

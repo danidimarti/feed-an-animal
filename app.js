@@ -59,6 +59,9 @@ app.use('/', feedananimal);
 const orderform = require('./routes/orderform');
 app.use('/', orderform);
 
+const thankyou = require('./routes/thankyou');
+app.use('/', thankyou);
+
 module.exports = app;
 
 

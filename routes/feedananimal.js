@@ -15,5 +15,22 @@ console.log(req.params.name)
 
 module.exports = router;
 
+// app.get(`/youfed/${req.animals.name}`, (req, res, next) => {
+//   console.log(req.animals.name)
+// Animal.find()
+// .then(animals =>{
+//   res.render('thankyou', {animal:animals});
+// })
+// .catch(err => {
+//   console.log('no thanks', err)
+// })
+// });
+
+// module.exports = router;
+
+// })
+
+
+
 
 

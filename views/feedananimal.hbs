@@ -1,47 +1,52 @@
-<div class="prices-bg-img" >
+<div class="prices-bg-img">
   <img src="../images/four_paws_4c.png" alt="logo-image" id="logo">
-  {{!-- <img src="../images/lions.jpg" alt="background image"> --}}
+  <img src="../images/lions.jpg" alt="background image">
+  <div class="btn-box">
+              <button href="#" class="btn btn-primary"><strong>Give a meal</strong></button>
+
+
+            </div>
 </div>
 
 
-    <div class="row justify-content-around">
+<div class="row justify-content-around">
 
-      <div class="container col-12 ">
-
-
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <!-- Bootstrap Card -->
-              <div class="card">
-                {{#each animal}}
-                <h1 class="h1-card">{{{foodcost}}}</h1>
-                <div class="card-body">
-
-                  <h5 class="card-title">{{name}}</h5>
-                  <p class="card-text">
-                    {{description}}</p>
+  <div class="container col-12 ">
 
 
-                </div>
-                <div class="btn-box">
-                  <a href="#" class="btn btn-primary"
-                    style="background-color:#ea5b0c; border-color: #ea5b0c; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3); width:200px; height: 40px; display: flex; justify-content: center; align-content: center; padding-top: 5px; margin-left: 20%; "><strong>Feed
-                      an animal</strong></a>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Bootstrap Card -->
+          <div class="card">
+            {{#each animal}}
+            <h1 class="h1-card">{{{foodcost}}}</h1>
+            <div class="card-body">
+
+              <h5 class="card-title">{{name}}</h5>
+              <p class="card-text">
+                {{description}}</p>
 
 
-                </div>
-              </div>
+            </div>
+            <div class="btn-box">
+              <a href="#" class="btn btn-primary"
+                style="background-color:#ea5b0c; border-color: #ea5b0c; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3); width:200px; height: 40px; display: flex; justify-content: center; align-content: center; padding-top: 5px; margin-left: 20%; "><strong>Feed
+                  an animal</strong></a>
+
 
             </div>
           </div>
+
         </div>
-
-        {{/each}}
-
       </div>
     </div>
+
+    {{/each}}
+
   </div>
+</div>
+</div>
 </div>
 
 
@@ -66,7 +71,8 @@
       <input id="email" class="order-input" type="email" name="email" placeholder="example@domain.com" required>
 
       <label class="order-input-label" for="firstname">Name*</label>
-      <input type="text" class="order-input" id="firstname" name="firstname" required minlength="4" maxlength="15" size="10" placeholder="First Name">
+      <input type="text" class="order-input" id="firstname" name="firstname" required minlength="4" maxlength="15"
+        size="10" placeholder="First Name">
 
       {{!-- <label class="order-input-label" for="firstname">Last Name*</label> --}}
       <input id="age-input" class="order-input" type="text" name="lastname" placeholder="Last Name">

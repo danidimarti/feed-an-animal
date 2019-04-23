@@ -125,3 +125,8 @@ background-image: "../images//lions.jpg";
 background-size: cover;
 height: 400px;
 } */
+
+.fa-info-circle {
+  color: rgba(255, 255, 255, 0.9);
+  
+}

@@ -13,6 +13,10 @@ $(document).ready(function () {
 
 })
 
+// $(document).ready(function(){
+//   $('[data-toggle="popover"]').popover();   
+// });
+
 document.getElementById("feedanimal-btn").addEventListener("click", function(){
   document.querySelector(".bg-modal").style.display = "flex"
 });
