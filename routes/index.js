@@ -7,9 +7,10 @@ const Animal = require('../models/animal')
 /* GET home page */
 router.get('/', (req, res, next) => {
   //find animal database
-Animal.find()
+Animal.find({})
 .then(animals =>{
-  res.render('index', {animal:animals});
+  console.log(animals)
+  res.render('index', {animals});
 })
 .catch(err => {
   console.log('Could not find animal', err)

@@ -43,8 +43,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
-
-
+hbs.registerPartials(__dirname + '/views/partials');
 // default value for title local
 app.locals.title = 'Express - Generated with IronGenerator';
 
@@ -59,8 +58,8 @@ app.use('/', thankyou);
 const feedananimal = require('./routes/feedananimal');
 app.use('/', feedananimal);
 
-const orderform = require('./routes/orderform');
-app.use('/', orderform);
+const subscriberForm = require('./routes/newsletter');
+app.use('/', subscriberForm);
 
 
 module.exports = app;

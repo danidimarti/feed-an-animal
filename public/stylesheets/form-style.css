@@ -43,11 +43,13 @@
   color: #fff;
 }
 
-h3 {
+.order-h3 {
   color: #2f3d4a;
   font-size: 16px;
-  margin: 3, 2px 0px 8px;
   font-weight: bolder;
+  margin-top: 8px;
+  text-align: left;
+  margin-left: 58px;
 }
 
 #btn-order {
@@ -90,6 +92,12 @@ h3 {
   width: 70%;
   display: block;
   margin: 15px auto;
+
+}
+
+.order-radius {
+margin-left: 15px;
+
 
 }
 

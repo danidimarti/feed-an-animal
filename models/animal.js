@@ -2,16 +2,22 @@ const mongoose = require('mongoose')
 const Schema   = mongoose.Schema;
 
 const animalSchema = new Schema({
-  name: String,
+  name: { type: String, required: true},
+  //small case identiier for url and partials 
+  indentifier: { type: String, required: true, unique: true },
   origin: String,
   age: Number,
   favoritefood: String,
-  foodcost: Number,
+  plan: { 
+    once: Number,
+    monthly: Number
+  },
   description: String,
   image: String,
   video: String,
   button: String,
   species: String,
+  bgimg: String,
 });
 
 const Animal = mongoose.model('Animal', animalSchema);

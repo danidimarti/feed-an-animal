@@ -1,9 +1,10 @@
 {{!-- Home Page  --}}
+
+
 <div class="grey-half">
   <img src="images/four_paws_4c.png" alt="logo-image" id="logo">
-
-  <a href="#" class="btn btn-primary"
-    style="background-color:#ea5b0c; border-color: #ea5b0c; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3); margin-left: 60%; margin-right: 0; width: 150px">Subscribe</a>
+{{>subscribe}}
+  
   <div class="container">
     <img src="/images/previous-icon.png" class="prev"></img>
     <img src="/images/next-icon.png" class="next"></img>
@@ -14,7 +15,7 @@
 
       <div class="slider-container col-12 ">
 
-        {{#each animal}}
+        {{#each animals}}
 
         <div class="container">
           <div class="row">
@@ -31,21 +32,21 @@
 
                   
 
-                  <img src="{{{image}}}" alt="animal images" class="animal-img">
+                  <img src="{{image}}" alt="animal images" class="animal-img">
                   <h1 class="h1-card"><strong>{{{species}}}</strong></h1>
                   <a href="#" data-placement="bottom" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"><i class="fas fa-info-circle"></i></a>
                   <div class="card-body">
 
                     
                   </div>
-                  <h5 class="card-title">{{name}}</h5>
+                  <h5 class="card-title">{{{name}}}</h5>
                   <p class="card-text">
                     {{description}}</p>
 
 
                 </div>
                 <div class="btn-box">
-                  <a href="#" class="btn btn-primary"
+                  <a href="/{{{indentifier}}}" class="btn btn-primary"
                     style="background-color:#ea5b0c; border-color: #ea5b0c; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3); width:200px; height: 40px; display: flex; justify-content: center; align-content: center; padding-top: 5px; margin-left: 20%; "><strong>Feed
                       an animal</strong></a>
                 </div>
