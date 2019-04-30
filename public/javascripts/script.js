@@ -14,11 +14,12 @@ $(document).ready(function () {
 
     const subname = $("#name-newsletter").val()
     const subemail = $("#email-newsletter").val()
-    const data = { name: subname, email: subemail }
+    const data = { firstname: subname, email: subemail }
     axios.post("/subscribe", data)
       .then((subscriber) => {
         console.log(subscriber)
-        // $("#ty-sub").val(`thank you, ${subscriber.name}`)
+        $("#success").toggleClass("active")
+        $("#myForm").toggleClass("deactivate")
       })
       .catch((err) => {
         console.log("Newsletter Subscription failed", err)

@@ -2,8 +2,8 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
 const subsSchema = new Schema({
-  email: String,
-  firstname: String,
+  email: {type: String, required: true, unique: true },
+  firstname: {type: String, required: true}
 }, {
   timestamps: { 
     createdAt: "created_at", 
