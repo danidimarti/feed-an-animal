@@ -9,15 +9,15 @@ const animalSchema = new Schema({
   age: Number,
   favoritefood: String,
   plan: { 
-    once: Number,
-    monthly: Number
+    once: { type: Number, required: true},
+    monthly: { type: Number, required: true }
   },
   description: String,
   image: String,
   video: String,
   button: String,
-  species: String,
-  bgimg: String,
+  species: { type: String, required: true },
+  bgimg: { type: String, required: true},
 });
 
 const Animal = mongoose.model('Animal', animalSchema);

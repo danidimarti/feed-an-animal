@@ -1,7 +1,7 @@
 <div class="pic-bar">
   <img src="images/four_paws_4c.png" alt="logo-image" id="logo-float"><a href="https://four-paws.org"></a>
   {{>subscribe}}
-  <h1 class="h1-card-ty">{{animal.name}}</h1>
+  <h1 class="h1-card-pr">You chose {{animal.name}}</h1>
 
   <img src="{{animal.bgimg}}" alt="logo-image" id="cover-img">
 </div>
@@ -16,10 +16,11 @@
       </div>
       <div class="pr-msg">
 
-        <h2><sup><span class="euro">€</sup></span>{{plan.once}}<span style="font-size:20px">.00</span></h2>
+        <h2><sup><span class="euro">€</sup></span>{{animal.plan.once}}<span style="font-size:20px">.00</span></h2>
         <hr size="4" color="#dedede" width="350px" align="center">
         <p>Help animals around the world one meal at a time.</p>
         <div class="btn-feed">
+          
           <button class="btn btn-primary feed-button" id="once-btn" data-plan= "once"
             style="width: 250px; height: 55px; margin-left:20px;"><strong>FEED TODAY</strong></button>
         </div>
@@ -36,7 +37,7 @@
         <p class="pay-options">GIVE MONTHLY</p>
       </div>
       <div class="pr-msg">
-        <h2><sup><span class="euro">€</sup></span>25<span style="font-size:20px">.00</span></h2>
+        <h2><sup><span class="euro">€</sup></span>{{animal.plan.monthly}}<span style="font-size:20px">.00</span></h2>
         <hr size="4" color="#dedede" width="350px" align="center">
         <p>Adopt and receive pics and updates!</p>
                
@@ -58,7 +59,7 @@
     </div>
     <img id="order-logo" src="../images/four_paws_4c_100.png" alt="logo">
 
-    <form action="/donate?animal={{name}}" id="orderForm" method="POST">
+    <form action="/donate?animal={{animal.name}}" id="orderForm" method="POST">
 
       <input type="radio" name="plan" value="once"> Once <span class="order-radius"></span>
       <input type="radio" name="plan" value="monthly"> Monthly<br>

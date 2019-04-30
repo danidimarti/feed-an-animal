@@ -2,7 +2,7 @@ const express = require('express');
 const router  = express.Router();
 const Animal = require('../models/animal')
 const Donor = require('../models/donor')
-
+const Donation = require('../models/donation')
 
 router.get("/:identifier", (req, res, next) => {
 console.log(req.params.identifier)
@@ -17,7 +17,7 @@ console.log(req.params.identifier)
 });
 
 router.post("/donate", (req, res, next) => {
-  const {plan, gender, firstname, lastname, email, number } = req.body;
+  const {plan, gender, firstname, lastname, email, number, animal } = req.body;
   const newDonor = new Donor(req.body)
   newDonor.save()
     .then((donor) => {
@@ -27,7 +27,11 @@ router.post("/donate", (req, res, next) => {
     })
     .catch((err)=> {
       console.log(err)
-})
+    })
+
+    
+    const newDonation = new Donation()
+
 })
 
 module.exports = router;

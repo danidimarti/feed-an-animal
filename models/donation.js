@@ -5,8 +5,7 @@ const Donor = require('../models/donor')
 
 const donationSchema = new Schema({
   animal: [{ type: Schema.Types.ObjectId, ref: 'Animal' }],
-  donation: [{ type: Schema.Types.ObjectId, ref: 'Donor' }],
-
+  donor: [{ type: Schema.Types.ObjectId, ref: 'Donor' }],
 }, {
     timestamps: {
       createdAt: "createdAt",
