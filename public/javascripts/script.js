@@ -10,20 +10,22 @@ $(document).ready(function () {
   })
 
   $("#subscribe-button").click((event) => {
-    event.preventDefault()
+    // event.preventDefault()
 
-    const subname = $("#name-newsletter").val()
-    const subemail = $("#email-newsletter").val()
-    const data = { firstname: subname, email: subemail }
-    axios.post("/subscribe", data)
-      .then((subscriber) => {
-        console.log(subscriber)
-        $("#success").toggleClass("active")
-        $("#myForm").toggleClass("deactivate")
-      })
-      .catch((err) => {
-        console.log("Newsletter Subscription failed", err)
-      })
+    // const subname = $("#name-newsletter").val()
+    // const subemail = $("#email-newsletter").val()
+    // const data = { firstname: subname, email: subemail }
+    // axios.post("/subscribe", data)
+    //   .then((subscriber) => {
+    //     console.log(subscriber)
+    //     $("#success").toggleClass("active")
+    //     $("#wapper").toggleClass("deactivate")
+    //   })
+    //   .catch((err) => {
+    //     console.log("Newsletter Subscription failed", err)
+    //   })
+
+    $('#newsletterForm').html($('#success').html())
   })
 
   $(".feed-button").click((event) => {

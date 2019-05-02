@@ -23,8 +23,12 @@ router.post("/donate", (req, res, next) => {
   newDonor.save()
     .then((donor) => {
       console.log(req.query.animal.name)
-      res.redirect("/thankyou?name=" + req.query.animal);
-
+      res.redirect("/thankyou?name=" + req.query.name);
+      Animal.findOne({ id: req.query.id })
+        .then((animal) => {
+          const newDonation = new Donation({ animal: req.query.id, donor: donor.id, amount: animal.plan.once })
+          newDonation.save()
+        })
     })
     .then(() => {
       let transporter = nodemailer.createTransport({
@@ -49,7 +53,7 @@ router.post("/donate", (req, res, next) => {
     .catch((err) => {
       console.log(err)
     })
- 
+
 })
 
 module.exports = router;

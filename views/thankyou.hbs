@@ -1,7 +1,7 @@
 <div class="pic-bar">
   <img src="images/four_paws_4c.png" alt="logo-image" id="logo-float">
   {{>subscribe}}
-  <img src="../images/orangutans_2.jpg" alt="logo-image" id="cover-img">
+  <img src="{{animal.bgimg}}" alt="animal-image" id="cover-img">
 </div>
 
 <div class="container-ty">
@@ -12,7 +12,7 @@
       <p class="successful">SUCCESSFUL</p>
     </div>
     <div class="ty-msg">
-      <h2>You've helped feed<br>{{name}}!</h2>
+      <h2>You've helped feed<br>{{animal.name}}!</h2>
       <hr size="4" color="#dedede" width="40%" align="center">
       <p>Your support makes all the difference for animals like {{name}}, who have no voice to speak for themselves. Sign
         up for our newsletter and find out more about ways you can get involved!</p>
