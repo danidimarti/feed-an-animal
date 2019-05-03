@@ -1,29 +1,31 @@
 <a class="btn btn-primary" id="subscribe"
     style="background-color:#ea5b0c; border-color: #ea5b0c; box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3); margin-left: 80%; margin-top: 2%; width: 150px; position: absolute; color: white">Subscribe</a>
 
+<div id="wapper" class="wapper-class">
+    <div class="form-popup" id="myForm">
+        <form class="form-container" id="newsletterForm">
 
-<div class="form-popup" id="myForm">
-    <form class="form-container" id="newsletterForm">
-        {{!-- <div id="wapper" class="wapper-class"> --}}
-        <h1>Sign up</h1>
+            <h1>Sign up</h1>
+            <div class="cancel">
+                +
+            </div>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email-newsletter" required>
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="First Name" name="firstname" id="name-newsletter" required>
+
+            <button id="subscribe-button" type="submit" class="btn">Join the movement</button>
+
+        </form>
+    </div>
+</div>
+
+<div id="success" class="success-class active">
+    <div class="success-container" id="newsletterform">
         <div class="cancel">
             +
         </div>
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" id="email-newsletter" required>
-
-        <label for="name"><b>Name</b></label>
-        <input type="text" placeholder="First Name" name="firstname" id="name-newsletter" required>
-
-        <button id="subscribe-button" type="submit" class="btn">Join the movement</button>
-        {{!-- </div> --}}
-    </form>
-</div>
-
-
-<div id="success" class="success-class active">
-    <div class="form-popup" id="myForm">
-
     </div>
 </div>
 

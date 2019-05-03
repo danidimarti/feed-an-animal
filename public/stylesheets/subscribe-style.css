@@ -67,7 +67,7 @@
 }
 
 /* Add a red background color to the cancel button */
-.form-container .cancel {
+.cancel {
   position: absolute;
   top:0;
   right: 14px;
@@ -88,3 +88,19 @@
 .deactivate {
   display: none;
 }
+
+.success-container {
+  width: 280px;
+  padding: 10px;
+  background-color: white;
+  height: 348px;
+}
+
+/* .success-container .close {
+  position: absolute;
+  top:0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+} */
