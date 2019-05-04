@@ -96,11 +96,40 @@
   height: 348px;
 }
 
-/* .success-container .close {
+.success-container .close {
   position: absolute;
   top:0;
   right: 14px;
   font-size: 42px;
   transform: rotate(45deg);
   cursor: pointer;
+}
+
+.success-h2 {
+  position: absolute;
+  right: 14px;
+  font-size: 2em;
+  width: 250px;
+  padding: 30px 10px 10px 10px;
+  color: rgb(66, 66, 66)
+}
+
+/* .success-p {
+  position: relative;
+  top:150;
+  right: 14px;
+  font-size: 1.3em;
+  width: 250px;
+  padding: 10px;
+  color: rgb(97, 97, 97)
 } */
+
+
+
+#success-logo {
+position: absolute;
+display: flex;
+margin-top: 170px;
+right: 90px;
+
+}

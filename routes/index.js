@@ -12,7 +12,7 @@ Animal.find({})
   console.log(animals)
   res.render('index', {animals});
 })
-.catch(err => {
+.catch((err) => {
   console.log('Could not find animal', err)
 })
 });

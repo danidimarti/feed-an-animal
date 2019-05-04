@@ -34,7 +34,7 @@ router.post("/subscribe", (req, res, next) => {
         from: "FOUR PAWS",
         to: req.body.email,
         subject: `Welcome, ${firstname}`,
-        text: `Your donation made a difference to ${req.query.animal}. After years of suffering ${req.query.animal} a species appropriate life. And thanks to you he will also eat like a king! Kind regards, the FOUR PAWS Team`,
+        text: `Welcome to the FOUR PAWS family. We are thrilled to have you here.`,
         html: `<h1>Welcome to our animal friendly community</h1>
                 <p> Dear, ${firstname}, </br>
                 Thank you for subscribing to our newsletter. Here you will find everything you need to know about our projects, campaigns and way you can help making the world more humane towards animals.

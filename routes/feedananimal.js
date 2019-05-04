@@ -22,7 +22,6 @@ router.post("/donate", (req, res, next) => {
   const newDonor = new Donor(req.body)
   newDonor.save()
     .then((donor) => {
-      console.log(req.query.animal.name)
       res.redirect("/thankyou?name=" + req.query.name);
       Animal.findOne({ id: req.query.id })
         .then((animal) => {
